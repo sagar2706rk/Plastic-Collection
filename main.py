@@ -16,10 +16,10 @@ local_server = params['local_server']
 
 app = Flask(__name__, template_folder="templates")
 
-app.config['MYSQL_HOST'] = 'localhost'
-app.config['MYSQL_USER'] = 'root'
-# app.config['MYSQL_PASSWORD'] = '123456'
-app.config['MYSQL_DB'] = 'plasticcollection'
+app.config['MYSQL_HOST'] = 'PlasticCollection.mysql.pythonanywhere-services.com'
+app.config['MYSQL_USER'] = 'PlasticCollectio'
+app.config['MYSQL_PASSWORD'] = 'Sagar@123'
+app.config['MYSQL_DB'] = 'PlasticCollectio$PlasticCollection'
 app.config['MYSQL_CURSORCLASS'] = 'DictCursor'
 # init MYSQL
 mysql = MySQL(app)
